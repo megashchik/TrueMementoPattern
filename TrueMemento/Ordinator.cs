@@ -1,4 +1,6 @@
-﻿namespace TrueMemento
+﻿using ExternalStorage;
+
+namespace TrueMemento
 {
     public class Ordinator
     {

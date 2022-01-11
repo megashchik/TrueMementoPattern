@@ -6,14 +6,14 @@ ExternalStorage.Caretaker caretaker = new ExternalStorage.Caretaker();
 Console.WriteLine("Start init");
 Console.WriteLine(ordinator);
 Console.WriteLine();
-TrueMemento.IMemento firstMemento = ordinator.Save("First");
+ExternalStorage.IMemento firstMemento = ordinator.Save("First");
 caretaker.Save(firstMemento);
 
 ordinator.Change();
 Console.WriteLine("Ordinator was changed");
 Console.WriteLine(ordinator);
 Console.WriteLine();
-TrueMemento.IMemento secondMemento = ordinator.Save("Second");
+ExternalStorage.IMemento secondMemento = ordinator.Save("Second");
 caretaker.Save(secondMemento);
 
 ordinator.Change();
@@ -28,7 +28,7 @@ Console.WriteLine("Previous state");
 Console.WriteLine(ordinator);
 Console.WriteLine();
 
-TrueMemento.IMemento secondMementoFromStorage = caretaker.Undo();
+ExternalStorage.IMemento secondMementoFromStorage = caretaker.Undo();
 Console.WriteLine($"Memento: {secondMementoFromStorage.Name}\t{secondMementoFromStorage.DateTime.Ticks}");
 ordinator.Load(secondMementoFromStorage);
 Console.WriteLine("The first state");
