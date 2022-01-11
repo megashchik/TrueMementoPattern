@@ -1,5 +1,7 @@
 I decided to read here, remember the patterns.
+
 Good description.
+
 The pattern suggests storing the copy of the object's state in a special object called memento. The contents of the memento aren’t accessible to any other object except the one that produced it. Other objects must communicate with mementos using a limited interface which may allow fetching the snapshot’s metadata (creation time, the name of the performed operation, etc.), but not the original object’s state contained in the snapshot.
 
 But let's see some code examples:
