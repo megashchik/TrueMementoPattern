@@ -5,9 +5,13 @@ The pattern suggests storing the copy of the object's state in a special object 
 But let's see some code examples:
 
 https://refactoring.guru/design-patterns/memento/csharp/example
+
 https://metanit.com/sharp/patterns/3.10.php
+
 https://tproger.ru/articles/pattern-oop-hranitel/
+
 http://gyanendushekhar.com/2017/02/01/memento-design-pattern-c/
+
 https://www.dofactory.com/net/memento-design-pattern
 
 In Wikipedia, it is depicted correctly, and canonically, but these are nested classes.
